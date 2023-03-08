@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SimsVerse - MySims Skyheroes</title>
+        <script src="https://kit.fontawesome.com/6924fd038c.js" crossorigin="anonymous"></script>
+        <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav class="flex-container"> 
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../assets/images/simsverse logo.svg">
+            </a> <!--Logo-->
+        </div>
+        <div class="flex-item-green nav-first-two left-flex-item dropdown" onclick="navdropdown()"> <!--Green Box-->
+            <img src="../assets/images/controller.svg" class="flex-item-img" alt=""> <!--Image-->
+            <button class="flex-item-gray dropbtn games-nav">Games</button>
+                <div class="dropdown-content">
+                    <a href="./mysims.html">MySims</a>
+                    <a href="./mysims kingdom.html">MySims Kingdom</a>
+                    <a href="./mysims party.html">MySims Party</a>
+                    <a href="./mysims racing.html">MySims Racing</a>
+                    <a href="./mysims agents.html">MySims Agents</a>
+                    <a href="./mysims skyheroes.html">MySims Skyheroes</a>
+                </div> <!--Gray Box-->
+        </div>
+        <div class="flex-item-green nav-first-two right-flex-item">
+            <a href="./about.html"><img src="../assets/images/questionmark.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">About</div>
+        </div>
+        <div class="flex-item-green left-flex-item community-nav nav-last-two">
+            <a href="./community.html"><img src="../assets/images/community.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Community</div>
+        </div>
+        <div class="flex-item-green right-flex-item nav-last-two">
+            <a href="./sources.html"><img src="../assets/images/sources.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Sources</div>
+        </div>
+    </nav>
+    <div class="container" onclick="navbutton(this)"> <!--mobile nav-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    <section class="masthead" role="img" aria-label="Image Description">
+       <img src="../assets/images/MSSH_Logo.png" style="height:40%;">
+    </section>
+    <div class="content-container">
+    <div class="middle-grid-container maintitle about">
+        <div class="content-box">
+            <div class="content-item1">
+                <img src ="../assets/images/mysims_skyheroesboxart.jpg" style="width: 70%; padding: 10% 0%;">
+                <div class="content-box-gray">MySims Skyheroes</div>
+            </div>
+            <div class="content-item2">
+                MySims Skyheroes is the sixth and final installment in the MySims Series. It was developed by Behavior Interactive and published by Electronic Arts (EA) on September 28, 2010. In it, the setting is based in the skies, utilizing the aesthetic of aircrafts. The player must lead the resistance in order to stop Morcubus and his drone army from taking over the skyways. Customize your plane with wings and engines obtained from finishing missions, or play in different modes such as solo campaign and boss battles, and local co-op or online multiplayer!
+            </div>
+        </div>
+        <div class="about-container">
+            <h1 class="title">Gameplay</h1>
+            The game introduces the player as a pilot who’s lost some of their memory and has been recruited by a rebel group whose main goal is to take down Morcubus and his evil corporation, the Chaos Pirates. The player slowly goes from a newbie pilot to a well-known hero by defeating enemies, playing through speed-challenges, and taking down mega bosses.
+       </div>
+       <div class="about-container">
+            <h1 class="title">Platforms</h1>
+            MySims is cross-platform and can be found on Nintendo Wii, DS, XBOX 360, and PS3. Story-wise, the game has no real difference between each version. Although gameplay wise a few things vary. The DS version focuses on missions which are given by the many different characters in the game. These missions are essential, as they are the only way to progress through the game. In the console versions (Wii/Xbox/PS3) however, they take on more of a racing/fps sort of aspect rather than the task system. You take on missions (which are more time-based and fps centered) in different places like tropics with volcanoes to cityscapes. You can use power-ups to increase your speed, alter your projectiles, etc.
+        </div>
+    </div>
+    </div>
+    <footer> 
+        <div class="footer-row">
+            <a href="https://www.ea.com/" class="footer-link">
+                <div>EA Website</div>
+            </a>
+            <a href="./sitemap.html" class="footer-link">
+                <div>Site Map</div>
+            </a>
+        </div>
+
+        <div class="footer-row">
+            <a href="https://www.youtube.com/EAvideos" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="https://www.twitter.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/EA/" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </a>
+                <div>
+                    <input type="checkbox" id="switch" name="theme"/>
+                    <label for="switch" class="mode-button">Toggle</label>
+                    <div class="button-text">
+                        Change Theme
+                    </div>
+                </div>   
+        </div>
+    </footer>
+</body>
+</html>

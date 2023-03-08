@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SimsVerse - About</title>
+        <script src="https://kit.fontawesome.com/6924fd038c.js" crossorigin="anonymous"></script>
+        <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav class="flex-container"> 
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../assets/images/simsverse logo.svg">
+            </a> <!--Logo-->
+        </div>
+        <div class="flex-item-green nav-first-two left-flex-item dropdown" onclick="navdropdown()"> <!--Green Box-->
+            <img src="../assets/images/controller.svg" class="flex-item-img" alt=""> <!--Image-->
+            <button class="flex-item-gray dropbtn games-nav">Games</button>
+                <div class="dropdown-content">
+                    <a href="./mysims.html">MySims</a>
+                    <a href="./mysims kingdom.html">MySims Kingdom</a>
+                    <a href="./mysims party.html">MySims Party</a>
+                    <a href="./mysims racing.html">MySims Racing</a>
+                    <a href="./mysims agents.html">MySims Agents</a>
+                    <a href="./mysims skyheroes.html">MySims Skyheroes</a>
+                </div> <!--Gray Box-->
+        </div>
+        <div class="flex-item-green nav-first-two right-flex-item">
+            <a href="./about.html"><img src="../assets/images/questionmark.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">About</div>
+        </div>
+        <div class="flex-item-green left-flex-item community-nav nav-last-two">
+            <a href="./community.html"><img src="../assets/images/community.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Community</div>
+        </div>
+        <div class="flex-item-green right-flex-item nav-last-two">
+            <a href="./sources.html"><img src="../assets/images/sources.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Sources</div>
+        </div>
+    </nav>
+    <div class="container" onclick="navbutton(this)"> <!--mobile nav-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    <section class="masthead" role="img" aria-label="Image Description">
+        <h1>
+            About
+        </h1>
+    </section>
+    <div class="content-container">
+    <div class="middle-grid-container maintitle about">
+        <div class="about-container">
+                <h1 class="title">History & Development</h1>
+                MySims was developed by Visceral Games (formally known as EA Redwood Shores) and published under its parent company, EA. About 242 developers and a total team of 334 people worked on the game. The music and audio for the game was composed by John Enroth and Silas Hite of Mutato Muzika. The tracks differentiate from each building/area the player is nearby. Emmy Toyonaga who was credited as the lead concept for the MySims franchise, claims that the whole idea was for the characters to have a more chibi looking design, short and stubby, much like many of Nintendo’s well known mascots like Mario and Kirby.
+           </div>
+           <div class="about-container">
+               <h1 class="title">Profits</h1>
+                While the exact profits EA had gained from the release of the first MySims game are unknown, it is estimated that the game had sold over 53 million copies worldwide.
+            </div>
+            <div class="about-container">
+                <h1 class="title">Credits</h1>
+                Executive Producer: Tim LeTourneau <br><br>Senior Director of Development: Brent Iverson<br><br>Producer: Shannon Copur<br><br>Production Team: Kevin Gibson, Daniel Hiatt, Mary Jean Chun, Nick Hunter, Melanie J. Lam, Timothy Johns, Jill Johnson, Terri Keeling, Masahiro Ueno<br><br>Design Lead: Hunter Howe, Robin Hunicke<br><br> Design Team: Ian Hetu, Brian Kaiser, Charles London<br><br>Production Intern: Karena Tyan<br><br>Technical Director: Benjamin Thompson<br><br>Development Directors: James Rogers, Mary Beth Haggerty, Orna Michael, Jennifer Hubbart, Logic Canales, Dalma Bolech<br><br>And more!
+            </div>
+    </div>
+    </div>
+    <footer> 
+        <div class="footer-row">
+            <a href="https://www.ea.com/" class="footer-link">
+                <div>EA Website</div>
+            </a>
+            <a href="./sitemap.html" class="footer-link">
+                <div>Site Map</div>
+            </a>
+        </div>
+
+        <div class="footer-row">
+            <a href="https://www.youtube.com/EAvideos" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="https://www.twitter.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/EA/" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </a>
+                <div>
+                    <input type="checkbox" id="switch" name="theme"/>
+                    <label for="switch" class="mode-button">Toggle</label>
+                    <div class="button-text">
+                        Change Theme
+                    </div>
+                </div>   
+        </div>
+    </footer>
+</body>
+</html>

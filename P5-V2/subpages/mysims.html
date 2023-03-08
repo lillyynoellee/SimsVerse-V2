@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SimsVerse - MySims</title>
+        <script src="https://kit.fontawesome.com/6924fd038c.js" crossorigin="anonymous"></script>
+        <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav class="flex-container"> 
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../assets/images/simsverse logo.svg">
+            </a> <!--Logo-->
+        </div>
+        <div class="flex-item-green nav-first-two left-flex-item dropdown" onclick="navdropdown()"> <!--Green Box-->
+            <img src="../assets/images/controller.svg" class="flex-item-img" alt=""> <!--Image-->
+            <button class="flex-item-gray dropbtn games-nav">Games</button>
+                <div class="dropdown-content">
+                    <a href="./mysims.html">MySims</a>
+                    <a href="./mysims kingdom.html">MySims Kingdom</a>
+                    <a href="./mysims party.html">MySims Party</a>
+                    <a href="./mysims racing.html">MySims Racing</a>
+                    <a href="./mysims agents.html">MySims Agents</a>
+                    <a href="./mysims skyheroes.html">MySims Skyheroes</a>
+                </div> <!--Gray Box-->
+        </div>
+        <div class="flex-item-green nav-first-two right-flex-item">
+            <a href="./about.html"><img src="../assets/images/questionmark.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">About</div>
+        </div>
+        <div class="flex-item-green left-flex-item community-nav nav-last-two">
+            <a href="./community.html"><img src="../assets/images/community.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Community</div>
+        </div>
+        <div class="flex-item-green right-flex-item nav-last-two">
+            <a href="./sources.html"><img src="../assets/images/sources.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Sources</div>
+        </div>
+    </nav>
+    <div class="container" onclick="navbutton(this)"> <!--mobile nav-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    <section class="masthead" role="img" aria-label="Image Description">
+       <img src="../assets/images/MySims_Logo.png">
+    </section>
+    <div class="content-container">
+    <div class="middle-grid-container maintitle about">
+        <div class="content-box">
+            <div class="content-item1">
+                <img src ="../assets/images/Mysims_artbox.jpg" class="boximg mysimsboxart">
+                <div class="content-box-gray">MySims</div>
+            </div>
+            <div class="content-item2">
+                    MySims is a spin-off of the popular Sims games. It was developed by EA Redwood Shores and released by EA on September 18, 2007. The premise of the game is for the player to rebuild the town with their ability to use essences. Help out the people in town, build more structures and objects, go fishing, prospecting, and more! Attract more people to your town by leveling up your town and expand towards larger areas to home more Sims. 
+            </div>
+        </div>
+        <div class="about-container">
+            <h1 class="title">Gameplay</h1>
+            Unlike the normal Sims style games, you’re only controlling your character instead of multiple people in one household. and The objective of the game is to restore the town by building objects using essences. The Sims will request you build these things for them, and the more you do this, the more your town star level increases. When your town star level increases, different Sims will start to show up and request to live in your town & you will receive various tools that will allow you to unlock other areas where Sims can reside like the forest and the desert. Once you reach town star level 5 you officially finish the game.
+       </div>
+       <div class="about-container">
+            <h1 class="title">Platforms</h1>
+            MySims is cross-platform and can be found on PC, Nintendo Wii, and DS. Between PC and Wii, the game is almost identical, graphically and gameplay wise. Although, the PC version does have a few exclusive features like additional outfits and a gardens area. The DS version is a bit more different. Visually, the game is extremely drastic from its PC/Wii counterpart. Gameplay wise, you succeed in earning stars by completing tasks from townies and interacting with tourists. There is a mobile version of the game which is now lost media. It is extremely similar to the DS version.
+        </div>
+    </div>
+    </div>
+    <footer> 
+        <div class="footer-row">
+            <a href="https://www.ea.com/" class="footer-link">
+                <div>EA Website</div>
+            </a>
+            <a href="./sitemap.html" class="footer-link">
+                <div>Site Map</div>
+            </a>
+        </div>
+
+        <div class="footer-row">
+            <a href="https://www.youtube.com/EAvideos" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="https://www.twitter.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/EA/" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </a>
+                <div>
+                    <input type="checkbox" id="switch" name="theme"/>
+                    <label for="switch" class="mode-button">Toggle</label>
+                    <div class="button-text">
+                        Change Theme
+                    </div>
+                </div>   
+        </div>
+    </footer>
+</body>
+</html>

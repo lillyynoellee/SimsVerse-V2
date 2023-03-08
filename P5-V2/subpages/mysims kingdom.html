@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SimsVerse - MySims Kingdom</title>
+        <script src="https://kit.fontawesome.com/6924fd038c.js" crossorigin="anonymous"></script>
+        <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav class="flex-container"> 
+        <div class="nav-logo">
+            <a href="../index.html">
+                <img src="../assets/images/simsverse logo.svg">
+            </a> <!--Logo-->
+        </div>
+        <div class="flex-item-green nav-first-two left-flex-item dropdown" onclick="navdropdown()"> <!--Green Box-->
+            <img src="../assets/images/controller.svg" class="flex-item-img" alt=""> <!--Image-->
+            <button class="flex-item-gray dropbtn games-nav">Games</button>
+                <div class="dropdown-content">
+                    <a href="./mysims.html">MySims</a>
+                    <a href="./mysims kingdom.html">MySims Kingdom</a>
+                    <a href="./mysims party.html">MySims Party</a>
+                    <a href="./mysims racing.html">MySims Racing</a>
+                    <a href="./mysims agents.html">MySims Agents</a>
+                    <a href="./mysims skyheroes.html">MySims Skyheroes</a>
+                </div> <!--Gray Box-->
+        </div>
+        <div class="flex-item-green nav-first-two right-flex-item">
+            <a href="./about.html"><img src="../assets/images/questionmark.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">About</div>
+        </div>
+        <div class="flex-item-green left-flex-item community-nav nav-last-two">
+            <a href="./community.html"><img src="../assets/images/community.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Community</div>
+        </div>
+        <div class="flex-item-green right-flex-item nav-last-two">
+            <a href="./sources.html"><img src="../assets/images/sources.svg" class="flex-item-img" alt=""></a>
+            <div class="flex-item-gray">Sources</div>
+        </div>
+    </nav>
+    <div class="container" onclick="navbutton(this)"> <!--mobile nav-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    <section class="masthead" role="img" aria-label="Image Description">
+       <img src="../assets/images/MSKwiiLogo_NA.png" style="height:30%;">
+    </section>
+    <div class="content-container">
+    <div class="middle-grid-container maintitle about">
+        <div class="content-box">
+            <div class="content-item1">
+                <img src ="../assets/images/mysims_kingdombox.jpg" style="width: 70%; padding: 10% 0%;">
+                <div class="content-box-gray">MySims Kingdom</div>
+            </div>
+            <div class="content-item2">
+                MySims Kingdom is the second game in the MySims series. It was developed by EA Redwood Shores and published by Electronic Arts (EA) on October 28, 2008. In it, the player, along with sidekicks Buddy and Lyndsay, must help King Roland by traveling to various other islands in the kingdom and restoring them with the power the Royal Wandolier possesses. The Royal Wandolier plays the same role as they did in the previous game, utilizing their power of essences and building to bring life back to the kingdom.
+            </div>
+        </div>
+        <div class="about-container">
+            <h1 class="title">Gameplay</h1>
+            The player starts off on Capital Island where a contest for the next Royal Wandolier ensues, during this the player will go through a tutorial to show how the game is played. Afterwards the Player is bestowed the honor of becoming the Royal Wandolier, to which they use their wand (hence the title, wandolier) and gather essences to complete ‘Scrolls’ which unlock new items you can use to decorate various islands. Although, in order to place these items you need a certain amount of “Mana” for each you decide to use. Mana is sort of like a currency which you can obtain through activities like mining. The kingdom consists of 11 various islands you can adventure through and reconstruct, including the starting island, “Capital Island”.
+       </div>
+       <div class="about-container">
+            <h1 class="title">Platforms</h1>
+            MySims Kingdom is a cross-platform game that can be found on Nintendo Wii and DS. In the Wii version of the game, you are a simple townsfolk who happens to earn the role as Royal Wandolier to go off and restore the other islands in the kingdom. In the DS version, you are a townsfolk who comes back from vacation, and during the night a mysterious figure comes and destroys the town. It is your goal to restore the progress back to the kingdom and take down the unknown villain.
+        </div>
+    </div>
+    </div>
+    <footer> 
+        <div class="footer-row">
+            <a href="https://www.ea.com/" class="footer-link">
+                <div>EA Website</div>
+            </a>
+            <a href="./sitemap.html" class="footer-link">
+                <div>Site Map</div>
+            </a>
+        </div>
+        <div class="footer-row">
+            <a href="https://www.youtube.com/EAvideos" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="https://www.twitter.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/ea" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/EA/" class="footer-icon">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </a>
+                <div>
+                    <input type="checkbox" id="switch" name="theme"/>
+                    <label for="switch" class="mode-button">Toggle</label>
+                    <div class="button-text">
+                        Change Theme
+                    </div>
+                </div>   
+        </div>
+    </footer>
+</body>
+</html>

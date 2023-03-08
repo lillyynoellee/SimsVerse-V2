@@ -1,0 +1,888 @@
+/* Elements */
+/* Universal selector reset */
+* {  
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg: #E9E9E9;
+  --bg-panel: #ffffff;
+  --color-headings: #000;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+@font-face {
+	font-family: Anakeim;
+	src: url("../assets/fonts/anakeim_font.ttf");
+}
+
+h1 {
+  font-family: Anakeim;
+  color: var(--color-text);
+}
+
+h2 {
+  font-family: Anakeim;
+  color: var(--color-text);
+}
+
+.boximg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.middle-header {
+  font-family: Anakeim;
+  color: var(--color-text);
+  font-size: 2em;
+  grid-column: span 2;
+  margin: 0 auto;
+}
+
+/* navbar */
+.flex-container {
+  display: flex; /* or inline-flex */
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: nowrap;
+  width: 100%;
+  height: 20vh;
+  background-color: #4D9AC5;
+  -webkit-box-shadow: 0px 7px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 7px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 21px 1px rgba(0,0,0,0.75);
+  gap: 5%;
+  z-index: 1069;
+  position:fixed;
+}
+
+.nav-logo {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  filter: drop-shadow(0 0 6px #000);
+}
+
+.nav-logo * {
+  display: block;
+  height: 100%; 
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.nav-logo img {
+  object-fit: cover;
+}
+
+.flex-item-green {
+  aspect-ratio: 1 / 1;
+  height: 70%;
+  background-color: #267B8D;
+  border: 10px solid #267B8D;
+  border-radius:0px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  position: relative;
+  box-shadow: 0px 1px 24px 7px rgba(0,0,0,0.54);
+}
+ 
+.flex-item-gray {
+  height: 15%;
+  background-color: #C9C9C9;
+  border: 5px solid #C9C9C9;
+  border-radius:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;    
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  translate: -50% 50%;
+  left: 50%;
+  bottom: 0%;
+  width: 80%;
+  font-family: Anakeim;
+  font-size: 1.2em;
+  opacity: 80%;
+  box-shadow: 0px 7px 21px 1px rgba(0,0,0,0.75);
+}
+
+.flex-item-img {
+  height: 110%;
+  width: 100%;
+}
+
+
+/* allows dropdown to appear */
+.dropdown {
+  float: left;
+}
+
+/* Dropdown button */
+.dropbtn {
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  background-color: #C9C9C9;
+  border: 5px solid #C9C9C9;
+  border-radius:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;    
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  translate: -50% 50%;
+  left: 50%;
+  bottom: 0%;
+  width: 80%;
+  height: 20%;
+  font-family: Anakeim;
+  font-size: 1.3em;
+  opacity: 80%;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #C9C9C9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: Anakeim;
+  font-size: 1em;
+  opacity: 80%;
+  border: 5px solid #C9C9C9;
+  border-radius: 30px;
+  flex-direction: column;
+} /* Dropdown content (hidden by default) */
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+} /* Links inside the dropdown */
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 20px;
+} /* Add a grey background color to dropdown links on hover */
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+} /* Show the dropdown menu on hover */
+
+.masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 80vh; /* if you don't want it to take up the full screen, reduce this number */
+  overflow: hidden;
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url('../assets/images/mysims.jpg');
+  padding-top: 20vh;
+}
+
+.masthead h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 11vmin;
+  font-family: Anakeim;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 4px 3px 4px #000000;
+  margin-bottom: 40px;
+}
+    
+.middle-grid-container {
+  background-color: #F5F5F5;
+  background-color: var(--bg-panel);
+  min-height: 90vh;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  padding-top: 5vh;
+}  
+
+.middle-grid-container.sourcePage {
+  padding: 0;
+  min-height: 0;
+  display: block;
+}
+
+.middle-grid-container.sitemap {
+  display: flex;
+  justify-content: center;
+}
+
+.titleContainer {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+} /* centers content after hero banner */
+
+.content-box {
+  width: 80%;
+  background-color: #267B8D;
+  border: 10px solid #267B8D;
+  border-radius:90px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 50px;
+  grid-column: span 2;
+}
+
+.content-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+  grid-row-start: span 2;
+  margin: 0 auto;
+  border-radius:90px;
+  width: 100%;
+  position: relative;
+}
+
+.content-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6em;
+  grid-row-start: span 2;
+  border-radius:90px;
+  width: 85%;
+  margin: 5% auto;
+  font-family: Anakeim;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10%;
+  box-sizing: border-box;
+}
+
+.content-box-gray {
+  background-color: #C9C9C9;
+  border-radius:50px;
+  text-align: center;
+  width: 70%;
+  height: 10%;
+  font-family: Anakeim;
+  font-size: 1.2em;
+  opacity: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-grid-container.maintitle {
+  grid-template-rows: 4rem 1fr 4rem;
+  min-height: 0;
+  padding: 2rem;
+  gap: 4rem 0;
+  margin: 0 auto;
+}
+
+.middle-grid-container.maintitle > .title {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Anakeim;
+}
+
+.middle-grid-container.about {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10rem;
+  box-sizing: border-box;
+}
+
+.middle-grid-container.about > .about-container {
+  position: relative;
+  background-color: #267B8D; 
+  padding: 2.5rem 1rem 1rem;
+  color: white;
+  font-family: anakeim;
+  font-size: 1.4em;
+}
+
+.middle-grid-container.about > .about-container > .title {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: #C9C9C9;
+  border-radius: 1000px;
+  padding: 0.5rem 1rem;
+  opacity: 90%;
+  font-size: 1.4em;
+}
+
+.about-container {
+  width: 90%;
+  height: 100%;
+  background-color: #267B8D;
+  border-radius: 20px;
+  margin: 0 auto;
+} 
+
+.about-text {
+  font-size: 1.5em;
+  font-family: Anakeim;
+  color: white;
+  padding: 20px 20px;
+}
+
+.review-container{
+  width: 590px;
+  height: 210px;
+  background-color: #267B8D;
+  border-radius: 20px;
+  margin: 0 auto;
+} 
+
+.column-title.community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.review-content {
+  font-size: 1.5em;
+  font-family: Anakeim;
+  color: white;
+  padding: 20px 20px;
+}
+
+.review-content2 {
+  font-size: 1.2em;
+  font-family: Anakeim;
+  color: #E4D00A;
+}
+
+/* carousel */
+.carousel {
+  margin: 15% 0% -35% 0%;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel > div {
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.carousel img {
+  height: 100%;
+}
+
+.carousel h2 {
+  background-color: gray;
+  padding: 1%;
+  border-radius: 1.8em;
+  opacity: 85%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+.titleContainer.sourcesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.source-link {
+  font-family: Anakeim;
+  color: var(--color-text);
+  font-size: 2em;
+ 
+}
+
+.source-link:hover {
+  translate: 0 -10%;
+  color: #4D9AC5;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sourcesContainer > section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10%;
+  gap: 2rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  min-height: 20vh;
+  background-color: #3A718F;
+}
+
+.footer-row {
+  display: flex;
+  gap: 1.8%;
+}
+
+.footer-link {
+  font-size: 3em;
+  font-family: Anakeim;
+  color: white;
+  margin: 1.5% 0% 0% 5%;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 5em;
+  margin: 1% 0% 0% 5%;
+}
+
+.mode-button {
+  margin-right: 25%;
+  margin-top: 15%;
+}
+
+a {
+  text-decoration: none;
+} /* removes underline from links */
+
+/* Light/Dark Mode Code */
+.button-text {
+  font-family: Anakeim;
+  font-size: 1.5em;
+  color: white;
+  float: right;
+  padding-top: 5%;
+  padding-left: 5%;
+  margin-bottom: 10%;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-text: white;
+}
+
+input[type=checkbox]{
+height: 0;
+width: 0;
+visibility: hidden;
+}
+
+label {
+cursor: pointer;
+text-indent: -9999px;
+width: 52px;
+height: 27px;
+background: grey;
+float: right;
+border-radius: 100px;
+position: relative;
+}
+
+label:after {
+content: '';
+position: absolute;
+top: 3px;
+left: 3px;
+width: 20px;
+height: 20px;
+background: #fff;
+border-radius: 90px;
+transition: 0.3s;
+}
+
+input:checked + label {
+background: var(--color-headings);
+}
+
+input:checked + label:after {
+left: calc(100% - 5px);
+transform: translateX(-100%);
+}
+
+label:active:after {
+width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+transition: all 750ms !important;
+transition-delay: 0 !important;
+}
+
+.content-title {
+  box-sizing: border-box;
+  padding: 5% 9% 0%;
+  text-align: center;
+  margin-bottom: -10%;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (width <= 1400px) {
+  .content-box {
+    margin-left: -15%;
+    width: 125%;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .flex-item-green {
+    height: 80%;
+    width: 80%;
+  }
+  
+  .flex-item-img {
+    width: 100%;
+   }
+   
+  .flex-item-gray {
+    font-size: 1em;
+    width: 80%;
+    height: auto;
+  }
+    
+  .dropdown-content {
+    font-size: 0.9em;
+  }
+    
+  .carousel {
+    margin: 25% 0% -45% 0%;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .footer-row {
+    display: flex;
+    gap: 3%;
+  }
+    
+  .footer-button {
+    font-size: 5em;
+    margin: 2% 0% 0% 4%;
+  }
+    
+  footer {
+    margin-bottom: -100%;
+  }
+
+  .about-container {
+    width: 130%;
+    margin-left: -20%;
+  }
+
+  .content-box {
+    margin-left: -20%;
+    width: 135%;
+  }
+
+  .content-item1 {
+    width: 130%;
+  }
+
+  .content-item2 {
+    font-size: 1.2em;
+  }
+
+.mysimsboxart {
+  width: 250px;
+}
+
+}
+
+@media only screen and (width <= 770px) {
+  .flex-container  {
+      width: 100vw;
+      height: 115vh;
+      display: none;
+      top: -15vh;
+  } /* creates mobile dropdown */
+
+  .flex-container.active {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-green {
+    flex-basis: 20%;
+    height: 20%;
+  }
+
+  .flex-item-gray {
+    width: 60%;
+  }
+
+  .right-flex-item {
+    left: -5%;
+  }
+
+  .left-flex-item {
+    left: 5%;
+  }
+  
+  .nav-first-two {
+    margin-top: -50%;
+  }
+
+  .nav-last-two {
+    margin-top: -15%;
+  }
+
+  .nav-logo {
+    height: 50%;
+    flex-basis: 100%;
+  }
+  
+  .nav-logo img {
+    object-fit: contain;
+  }
+  
+  .games-nav {
+    z-index: 20000000000000000000;
+  }
+
+  .community-nav {
+    z-index: -1;
+  }
+
+  .dropdown-content.active {
+    display: flex;
+  } /* Causes the dropdown to appear on mobile */
+
+  .container {
+    position: fixed;
+    z-index: 10000000;
+    left: 5%;
+    top: 5%;
+    filter: drop-shadow(0 0 10px #000);
+  } /* x for mobile menu */
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 1000px;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .footer-row {
+    display: flex;
+    gap: 1.8%;
+  }
+  
+  .footer-link {
+    font-size: 2em;
+    font-family: Anakeim;
+    color: white;
+    margin: 1.5% 0% 0% 5%;
+  }
+  
+  .footer-icon {
+    color: white;
+    font-size: 2.5em;
+    margin: 0% 0% 0% 5%;
+  }
+  
+  .mode-button {
+    margin-right: 27%;
+    margin-top: -5%;
+  }
+
+  .button-text {
+    font-family: Anakeim;
+    font-size: 1em;
+    color: white;
+    float: right;
+    padding-top: 5%;
+    padding-right: 10%;
+    margin-bottom: 0%;
+  }
+
+  .about-container {
+    margin-left: -40%;
+    width: 170%;
+  }
+
+  .content-box {
+    margin-left: -40%;
+    width: 175%;
+  }
+
+  .mysimsboxart {
+    width: 200px;
+  }
+}
+
+@media screen and (width <= 560px) {
+  .flex-item-green {
+    flex-basis: 10%;
+    height: 16%;
+  }
+
+  .flex-container.active {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-gray {
+    font-size: 1em;
+  }
+
+  .nav-first-two {
+    margin-top: -70%;
+  }
+
+  .nav-last-two {
+    margin-top: -45%;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 1000px;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .about-container {
+    margin-left: -90%;
+    width: 260%;
+  }
+
+  .content-box {
+    grid-template-columns: 1fr;
+    margin-left: -80%;
+    width: 250%;
+  }
+
+  .content-item2 {
+    font-size: 1em;
+  }
+
+  .content-item1 {
+    padding-top: 90%;
+    width: 70%;
+  }
+
+  .mysimsboxart {
+    width: 170px;
+  }
+}
+
+@media screen and (width <= 433px) {
+  .flex-item-green {
+    flex-basis: 20%;
+    height: 13%;
+  }
+
+  .flex-item-gray {
+    font-size: 0.9em;
+  }
+
+  .nav-first-two {
+    margin-top: -90%;
+  }
+
+  .nav-last-two {
+    margin-top: -75%;
+  }
+
+  .dropdown-content {
+    left: 95%;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 1000px;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .about-container {
+    margin-left: -290%;
+    width: 600%;
+  }
+}
